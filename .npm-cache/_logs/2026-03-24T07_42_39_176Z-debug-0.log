@@ -1,0 +1,44 @@
+0 verbose cli /Users/wuchunfa/.nvm/versions/node/v20.19.0/bin/node /Users/wuchunfa/.nvm/versions/node/v20.19.0/bin/npm
+1 info using npm@10.8.2
+2 info using node@v20.19.0
+3 silly config load:file:/Users/wuchunfa/.nvm/versions/node/v20.19.0/lib/node_modules/npm/npmrc
+4 silly config load:file:/Users/wuchunfa/Downloads/vue-captcha-demo/src/package/aliyReg/.npmrc
+5 silly config load:file:/Users/wuchunfa/.npmrc
+6 silly config load:file:/Users/wuchunfa/.nvm/versions/node/v20.19.0/etc/npmrc
+7 verbose title npm pack
+8 verbose argv "pack" "--dry-run"
+9 verbose logfile logs-max:10 dir:/Users/wuchunfa/Downloads/vue-captcha-demo/src/package/aliyReg/.npm-cache/_logs/2026-03-24T07_42_39_176Z-
+10 verbose logfile /Users/wuchunfa/Downloads/vue-captcha-demo/src/package/aliyReg/.npm-cache/_logs/2026-03-24T07_42_39_176Z-debug-0.log
+11 silly logfile done cleaning log files
+12 silly packumentCache heap:4345298944 maxSize:1086324736 maxEntrySize:543162368
+13 notice
+14 notice 📦  aliyun-captcha-vue3-plugin@0.1.0
+15 notice Tarball Contents
+16 notice 10.1kB dist/index.cjs
+16 notice 23.9kB dist/index.cjs.map
+16 notice 9.9kB dist/index.js
+16 notice 23.9kB dist/index.js.map
+16 notice 11.8kB dist/index.umd.js
+16 notice 23.9kB dist/index.umd.js.map
+16 notice 3.6kB dist/types/components/AliyunCaptcha.d.ts
+16 notice 673B dist/types/index.d.ts
+16 notice 188B dist/types/symbols.d.ts
+16 notice 1.5kB dist/types/types.d.ts
+16 notice 374B dist/types/utils/loadScript.d.ts
+16 notice 1.4kB package.json
+17 notice Tarball Details
+18 notice name: aliyun-captcha-vue3-plugin
+19 notice version: 0.1.0
+20 notice filename: aliyun-captcha-vue3-plugin-0.1.0.tgz
+21 notice package size: 12.9 kB
+22 notice unpacked size: 111.2 kB
+23 notice shasum: 0e15d0ee106ff8d0cef8ac6659572b363bf01ec0
+24 notice integrity: sha512-7lWxbZAXR4j0W[...]eLTv0KxU6ZnBA==
+25 notice total files: 12
+26 notice
+27 verbose cwd /Users/wuchunfa/Downloads/vue-captcha-demo/src/package/aliyReg
+28 verbose os Darwin 23.3.0
+29 verbose node v20.19.0
+30 verbose npm  v10.8.2
+31 verbose exit 0
+32 info ok

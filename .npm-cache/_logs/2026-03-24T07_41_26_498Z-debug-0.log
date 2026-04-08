@@ -1,0 +1,45 @@
+0 verbose cli /Users/wuchunfa/.nvm/versions/node/v20.19.0/bin/node /Users/wuchunfa/.nvm/versions/node/v20.19.0/bin/npm
+1 info using npm@10.8.2
+2 info using node@v20.19.0
+3 silly config load:file:/Users/wuchunfa/.nvm/versions/node/v20.19.0/lib/node_modules/npm/npmrc
+4 silly config load:file:/Users/wuchunfa/Downloads/vue-captcha-demo/src/package/aliyReg/.npmrc
+5 silly config load:file:/Users/wuchunfa/.npmrc
+6 silly config load:file:/Users/wuchunfa/.nvm/versions/node/v20.19.0/etc/npmrc
+7 verbose title npm pack
+8 verbose argv "pack" "--dry-run"
+9 verbose logfile logs-max:10 dir:/Users/wuchunfa/Downloads/vue-captcha-demo/src/package/aliyReg/.npm-cache/_logs/2026-03-24T07_41_26_498Z-
+10 verbose logfile /Users/wuchunfa/Downloads/vue-captcha-demo/src/package/aliyReg/.npm-cache/_logs/2026-03-24T07_41_26_498Z-debug-0.log
+11 silly logfile done cleaning log files
+12 http fetch GET https://registry.npmjs.org/npm attempt 1 failed with ENOTFOUND
+13 silly packumentCache heap:4345298944 maxSize:1086324736 maxEntrySize:543162368
+14 notice
+15 notice 📦  aliyun-captcha-vue3-plugin@0.1.0
+16 notice Tarball Contents
+17 notice 10.1kB dist/index.cjs
+17 notice 23.9kB dist/index.cjs.map
+17 notice 9.9kB dist/index.js
+17 notice 23.9kB dist/index.js.map
+17 notice 11.8kB dist/index.umd.js
+17 notice 23.9kB dist/index.umd.js.map
+17 notice 3.6kB dist/types/components/AliyunCaptcha.d.ts
+17 notice 673B dist/types/index.d.ts
+17 notice 188B dist/types/symbols.d.ts
+17 notice 1.5kB dist/types/types.d.ts
+17 notice 374B dist/types/utils/loadScript.d.ts
+17 notice 1.4kB package.json
+18 notice Tarball Details
+19 notice name: aliyun-captcha-vue3-plugin
+20 notice version: 0.1.0
+21 notice filename: aliyun-captcha-vue3-plugin-0.1.0.tgz
+22 notice package size: 12.9 kB
+23 notice unpacked size: 111.2 kB
+24 notice shasum: 0e15d0ee106ff8d0cef8ac6659572b363bf01ec0
+25 notice integrity: sha512-7lWxbZAXR4j0W[...]eLTv0KxU6ZnBA==
+26 notice total files: 12
+27 notice
+28 verbose cwd /Users/wuchunfa/Downloads/vue-captcha-demo/src/package/aliyReg
+29 verbose os Darwin 23.3.0
+30 verbose node v20.19.0
+31 verbose npm  v10.8.2
+32 verbose exit 0
+33 info ok

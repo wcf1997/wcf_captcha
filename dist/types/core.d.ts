@@ -1,0 +1,30 @@
+import type { AliyunCaptchaController, AliyunCaptchaControllerOptions, AliyunCaptchaSlideStyle } from "./types";
+export * from "./types";
+export declare const DEFAULT_SLIDE_STYLE: AliyunCaptchaSlideStyle;
+export declare const DEFAULT_BUTTON_STYLE: {
+    readonly zIndex: "99";
+    readonly width: "150px";
+    readonly boxSizing: "border-box";
+    readonly borderRadius: "4px";
+    readonly border: "1px solid transparent";
+    readonly cursor: "pointer";
+    readonly backgroundColor: "hsla(160, 100%, 37%, 1)";
+    readonly color: "#fff";
+    readonly padding: "8px 0";
+    readonly fontSize: "14px";
+    readonly lineHeight: "22px";
+    readonly textAlign: "center";
+};
+export declare const HIDDEN_BUTTON_STYLE: {
+    readonly position: "absolute";
+    readonly width: "1px";
+    readonly height: "1px";
+    readonly margin: "-1px";
+    readonly border: "0";
+    readonly padding: "0";
+    readonly overflow: "hidden";
+    readonly clip: "rect(0 0 0 0)";
+    readonly whiteSpace: "nowrap";
+};
+export declare function createAliyunCaptcha(initialOptions?: AliyunCaptchaControllerOptions): AliyunCaptchaController;
+export default createAliyunCaptcha;
