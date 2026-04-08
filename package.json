@@ -1,6 +1,6 @@
 {
-  "name": "wcf/captcha",
-  "version": "0.1.0",
+  "name": "aly_captcha",
+  "version": "0.1.1",
   "description": "Aliyun slider captcha with a framework-agnostic core and Vue 3 wrapper.",
   "type": "module",
   "main": "dist/index.cjs",

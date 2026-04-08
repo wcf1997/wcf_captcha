@@ -23,8 +23,11 @@ export function createAliyunCaptchaPlugin(
   options: AliyunCaptchaPluginOptions = {}
 ): Plugin {
   return {
-    install(app: App) {
-      app.provide(aliyunCaptchaOptionsKey, options);
+    install(app: App, runtimeOptions: AliyunCaptchaPluginOptions = {}) {
+      app.provide(aliyunCaptchaOptionsKey, {
+        ...options,
+        ...runtimeOptions,
+      });
       app.component("AliyunCaptcha", AliyunCaptcha);
     },
   };

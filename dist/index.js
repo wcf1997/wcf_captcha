@@ -180,7 +180,11 @@ function createAliyunCaptchaPlugin() {
   let options = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
   return {
     install(app) {
-      app.provide(aliyunCaptchaOptionsKey, options);
+      let runtimeOptions = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+      app.provide(aliyunCaptchaOptionsKey, {
+        ...options,
+        ...runtimeOptions
+      });
       app.component("AliyunCaptcha", AliyunCaptcha);
     }
   };

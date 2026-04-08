@@ -1,11 +1,11 @@
-# aliyun-captcha-vue3-plugin
+# aly_captcha
 
 Aliyun slider captcha with a framework-agnostic core and an optional Vue 3 wrapper.
 
 ## Install
 
 ```bash
-pnpm add aliyun-captcha-vue3-plugin
+pnpm add aly_captcha
 ```
 
 ## Generic Usage
@@ -13,26 +13,26 @@ pnpm add aliyun-captcha-vue3-plugin
 Use the `core` subpath in React or plain DOM code.
 
 ```ts
-import { createAliyunCaptcha } from "aliyun-captcha-vue3-plugin/core";
+import { createAliyunCaptcha } from "aly_captcha/core";
 
 const controller = createAliyunCaptcha({
   mount: "#captcha-root",
   sceneId: "your-scene-id",
   prefix: "your-prefix",
-  verify: async (captchaVerifyParam) => {
+  verify: async captchaVerifyParam => {
     const response = await fetch("/api/captcha/verify", {
       method: "POST",
       headers: {
-        "Content-Type": "application/json",
+        "Content-Type": "application/json"
       },
-      body: JSON.stringify(captchaVerifyParam),
+      body: JSON.stringify(captchaVerifyParam)
     });
 
     return response.json();
   },
   onSuccess(payload) {
     console.log("captcha success", payload);
-  },
+  }
 });
 
 await controller.init();
@@ -45,8 +45,8 @@ await controller.show();
 import { useEffect, useRef } from "react";
 import {
   createAliyunCaptcha,
-  type AliyunCaptchaController,
-} from "aliyun-captcha-vue3-plugin/core";
+  type AliyunCaptchaController
+} from "aly_captcha/core";
 
 export function LoginCaptcha() {
   const rootRef = useRef<HTMLDivElement | null>(null);
@@ -62,17 +62,17 @@ export function LoginCaptcha() {
       manual: true,
       sceneId: "your-scene-id",
       prefix: "your-prefix",
-      verify: async (captchaVerifyParam) => {
+      verify: async captchaVerifyParam => {
         const response = await fetch("/api/captcha/verify", {
           method: "POST",
           headers: {
-            "Content-Type": "application/json",
+            "Content-Type": "application/json"
           },
-          body: JSON.stringify(captchaVerifyParam),
+          body: JSON.stringify(captchaVerifyParam)
         });
 
         return response.json();
-      },
+      }
     });
 
     controllerRef.current = controller;
@@ -100,33 +100,35 @@ export function LoginCaptcha() {
 ```ts
 import { createApp } from "vue";
 import App from "./App.vue";
-import AliyunCaptchaPlugin from "aliyun-captcha-vue3-plugin";
+import AliyunCaptchaPlugin from "aly_captcha";
 
 const app = createApp(App);
 
 app.use(AliyunCaptchaPlugin, {
   sceneId: "your-scene-id",
   prefix: "your-prefix",
-  verify: async (captchaVerifyParam) => {
+  verify: async captchaVerifyParam => {
     const response = await fetch("/api/captcha/verify", {
       method: "POST",
       headers: {
-        "Content-Type": "application/json",
+        "Content-Type": "application/json"
       },
-      body: JSON.stringify(captchaVerifyParam),
+      body: JSON.stringify(captchaVerifyParam)
     });
 
     return response.json();
-  },
+  }
 });
 
 app.mount("#app");
 ```
 
+`app.use(AliyunCaptchaPlugin, options)` and `app.use(createAliyunCaptchaPlugin(options))` are both supported.
+
 ```vue
 <script setup lang="ts">
 import { ref } from "vue";
-import type { AliyunCaptchaExpose } from "aliyun-captcha-vue3-plugin";
+import type { AliyunCaptchaExpose } from "aly_captcha";
 
 const captchaRef = ref<AliyunCaptchaExpose | null>(null);
 
@@ -140,16 +142,14 @@ function openCaptcha() {
     点击校验
   </AliyunCaptcha>
 
-  <button type="button" @click="openCaptcha">
-    手动唤起验证码
-  </button>
+  <button type="button" @click="openCaptcha">手动唤起验证码</button>
 </template>
 ```
 
 ## Exports
 
-- `aliyun-captcha-vue3-plugin`: Vue plugin and component entry.
-- `aliyun-captcha-vue3-plugin/core`: framework-agnostic controller entry.
+- `aly_captcha`: Vue plugin and component entry.
+- `aly_captcha/core`: framework-agnostic controller entry.
 - `AliyunCaptcha`: component
 - `AliyunCaptchaComponent`: named component export
 - `createAliyunCaptcha`: generic controller factory
